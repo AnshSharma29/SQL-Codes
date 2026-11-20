@@ -29,3 +29,5 @@ SELECT ENAME FROM Emp WHERE HIREDATE LIKE '%82' AND ENAME LIKE 'J%';
  
 -- Q10. Display all salesman. Also managers having salary more than 1800.
 SELECT * FROM Emp WHERE JOB = 'SALESMAN' OR JOB = 'MANAGER' AND SAL > 1800;
+
+
