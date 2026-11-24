@@ -32,8 +32,6 @@ UPDATE EMP SET SAL = SAL * 0.95 WHERE JOB = 'MANAGER';
 UPDATE EMP SET SAL = SAL * 1.05
 WHERE SAL = (SELECT MIN(SAL) FROM EMP);
 
- 
-
 -- Q19. Increase the salary of Jones and James by 5% and transfer them to Department 20.
 UPDATE EMP SET SAL = SAL * 1.05, DEPTNO = 20
 WHERE ENAME IN ('JAMES', 'JONES');
