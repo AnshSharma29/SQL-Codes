@@ -203,6 +203,7 @@ INSERT INTO order_item (order_id, item_id, quantity, unit_price) VALUES (1015, 3
 INSERT INTO order_item (order_id, item_id, quantity, unit_price) VALUES (1015, 309, 1, 119);
 
 
+
 -- amount = items + 5% GST + Rs.40 delivery fee (free above Rs.500)
 INSERT INTO payment (payment_id, order_id, payment_mode, payment_status, amount, paid_on)
 VALUES (501, 1001, 'UPI', 'PAID', 651, TO_DATE('2026-09-20 13:12', 'YYYY-MM-DD HH24:MI'));
