@@ -25,3 +25,24 @@ SELECT TO_CHAR(HIREDATE, 'DDth "of" Month, YYYY') FROM Emp;
 -- Q25. Concatenate the name and job of the employees in a single column in the Emp table.
 SELECT ENAME || ' ' || JOB FROM Emp;
 
+-- Q26. Display the names of the employees padded with * sign, and the length of the name should be 40.
+SELECT LPAD(ENAME, 40, '*') FROM EMP;
+
+ 
+
+
+
+
+-- Q27. Display all the names of the employees which are 4 characters long.
+SELECT ENAME FROM EMP WHERE LENGTH(ENAME) = 4;
+ 
+
+-- Q28. Display the first 3 characters of the name in the Emp table.
+SELECT SUBSTR(ENAME, 1, 3) FROM EMP;
+ 
+
+-- Q29. Find the second occurrence of 'S' character in the name.
+SELECT INSTR(ENAME, 'S', 1, 2) FROM EMP;
+ 
+-- Q30. Display all the names in the Emp table in lowercase letters.
+SELECT LOWER(ENAME) FROM EMP;
